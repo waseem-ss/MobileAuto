@@ -25,7 +25,6 @@ public class CardDetails extends Util {
         catch (RuntimeException e){
             e.printStackTrace();
         } finally {
-            //viewCard(cardName,appiumDriver);
             return appiumDriver.findElement(AppiumBy.
                     xpath("//android.widget.TextView[@resource-id=\"com.example.pokemonexercise:id/card_name\" and @text=\"" + cardName + "\"]"));
         }
